@@ -25,7 +25,7 @@ body {
     text-align: center;
     color: white;
     position: absolute;
-    top: 43%;
+    top: 300px;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%); 
@@ -39,7 +39,7 @@ body {
     background-color: white;
     overflow: scroll;
     position: absolute;
-    top: 180%;
+    top: 1400px;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%); 
@@ -52,7 +52,7 @@ body {
 
 #dot {
     position: absolute;
-    top: 50%;
+    top: 350px;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);   
@@ -106,9 +106,9 @@ button {
     display: inline-block;
     font-size: 16px;
     margin: 10px 2px;
-    cursor: cursor;
+    cursor: default;
 }
-
+ 
 a {
     color: #505050;
 }
@@ -123,11 +123,20 @@ a:hover {
     background-color: transparent;
     color: white;
     position: absolute;
-    top: 55%;
+    top: 390px;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%);     
+    transform: translate(-50%, -50%);   
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;  
 }
+
+
 
 #init:hover {
     background-color: rgba(255, 255, 255, 0.1);
